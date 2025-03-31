@@ -43,6 +43,8 @@ void enterNumber(int& varLink, string label) {
 void enterSide1()
 {
 	//разрабатывается Developer1 - ветка branch_fun_1
+    enterNumber(side1, "Input first side of rectangle");
+    cout << "Side1: " << side1 << endl;
 }
 
 void enterSide2()
@@ -83,9 +85,7 @@ int main() {
             cout << "Task " << item.first << ". " << item.second.title << endl;
         }
         cout << "0. Выход" << std::endl;
-        cout << "Введите номер пункта: ";
-        cin >> choice;
-
+        enterNumber(choice, "Input number of menu: ");
         if (choice == 0) {
             cout << "© 2025 FirstName LastName" << endl;
             break;
